@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Maven+Pro:wght@500&family=Poppins:wght@200&family=Russo+One&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Russo One', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    align-items: center;
+    padding: 30px;
+}
+
+#logo{
+    width: 150px;
+}
+#menuContainer{
+    display: flex;
+    gap: 60px;
+}
+#menuContainer li{
+    list-style: none;
+    color: rgb(51, 51, 51);
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: 'Russo One', sans-serif;
+    cursor: pointer;
+}
+#menuContainer li:hover{
+    text-decoration: underline;
+    color: black;
+}
+#searchContainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+#searchContainer input{
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 35px;
+    text-align: center;
+}
+
+#threeDot{
+    display: none;
+}
+
+/* section  */
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    margin-top: 50px;
+}
+#img1{
+    width: 500px;
+    left: 10px;
+    height: 670px;
+    margin-left: 200px;
+}
+#img2{
+    width: 380px;
+    position:absolute;
+    left: 400px;
+    top: 520px;
+    z-index: -1;
+}
+
+#world{
+    display: block;
+    margin-left: 200px;
+}
+#stars{
+    display: block;
+    margin-left: 850px;
+}
+h1{
+text-align: center;
+font-size: 4.2rem;
+font-family: 'Maven Pro', sans-serif;
+font-weight: 600;
+margin-top: 20px;
+}
+p{
+    text-align: center;
+    margin: 80px 200px 80px 200px;
+    font-family: 'Poppins', sans-serif;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+button{
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid black;
+    padding: 0px 30px 0px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius:10px ;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+}
+button:hover{
+    color: white;
+    background: black;
+}
+#star2{
+    display: block;
+    margin-top: 100px;
+    margin-left: 100px;
+    float: left;
+}
+.social{
+    margin-right: 120px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(71, 71, 71);
+}
+svg{
+    width: 30px;
+    margin: 10px;
+}
+
+
+
+
+/* responsiveness */
+
+@media (max-width:1640px) {
+    header{
+        gap: 200px;
+    }
+}
+@media (max-width:1470px) {
+    header{
+        gap: 200px;
+    }
+    #logo{
+        width: 120px;
+    }
+    #menuContainer{
+        gap: 30px;
+    }
+    #menuContainer li{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:1225px) {
+    header{
+        gap: 130px;
+    }
+    #logo{
+        width: 100px;
+    }
+    
+}
+@media (max-width:1060px) {
+    header{
+        gap: 100px;
+    }
+    #logo{
+        width: 80px;
+    }
+    #menuContainer{
+        gap: 15px;
+    }
+    #menuContainer li{
+        font-size: 1rem;
+    }
+    
+}
+@media (max-width:880px) {
+    header{
+        gap: 80px;
+    }
+    #logo{
+        width: 60px;
+    }
+    #menuContainer{
+        gap: 15px;
+    }
+    #menuContainer li{
+        font-size: 0.8rem;
+    }
+    
+        #searchContainer input{
+            width: 100px;
+            height: 25px;
+        }
+}
+@media (max-width:660px) {
+    #menuContainer{
+        display: none;
+    }
+    #threeDot{
+        display: block;
+    }
+    #logo{
+        width: 100px;
+    }
+    header{
+        gap: 100px;
+    }
+}
+@media (max-width:470px) {
+    
+    #logo{
+        width: 100px;
+    }
+    header{
+        gap: 50px;
+    }
+};
